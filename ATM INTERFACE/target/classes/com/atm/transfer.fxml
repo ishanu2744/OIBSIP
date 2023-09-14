@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.atm.LogIn">
+   <children>
+      <Label alignment="CENTER" layoutX="125.0" layoutY="21.0" prefHeight="54.0" prefWidth="268.0" text="Transfer to Another Account">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="transfer_amount" layoutX="162.0" layoutY="269.0" prefHeight="48.0" prefWidth="197.0" promptText="Enter Amount to Transfer">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Button layoutX="209.0" layoutY="336.0" mnemonicParsing="false" onAction="#successTrans" prefHeight="40.0" prefWidth="103.0" text="Transfer">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="transfer_status" layoutX="14.0" layoutY="431.0" prefHeight="48.0" prefWidth="472.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="transfer_username" layoutX="118.0" layoutY="88.0" prefHeight="40.0" prefWidth="280.0" promptText="Enter User Name of Transfered Account">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="my_username" layoutX="142.0" layoutY="146.0" prefHeight="40.0" prefWidth="238.0" promptText="Enter your User Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="my_pin" layoutX="158.0" layoutY="202.0" prefHeight="40.0" prefWidth="205.0" promptText="Eneter your PIN">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </PasswordField>
+   </children>
+</AnchorPane>

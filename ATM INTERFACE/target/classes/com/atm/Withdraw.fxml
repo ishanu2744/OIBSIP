@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.atm.LogIn">
+   <children>
+      <Label layoutX="84.0" layoutY="161.0" prefHeight="40.0" prefWidth="89.0" text="PIN">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="w_pin" layoutX="230.0" layoutY="161.0" prefHeight="40.0" prefWidth="203.0" promptText="Enter Your PIN" />
+      <Label layoutX="84.0" layoutY="250.0" prefHeight="40.0" prefWidth="100.0" text="Amount ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="w_amount" layoutX="230.0" layoutY="250.0" prefHeight="40.0" prefWidth="203.0" promptText="Enter Amount" />
+      <Button layoutX="184.0" layoutY="350.0" mnemonicParsing="false" onAction="#Success_Withdraw" prefHeight="50.0" prefWidth="120.0" text="WithDraw">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="w_status" layoutX="36.0" layoutY="439.0" prefHeight="40.0" prefWidth="226.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="79.0" layoutY="77.0" prefHeight="40.0" prefWidth="100.0" text="User Name">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="w_user" layoutX="230.0" layoutY="77.0" prefHeight="40.0" prefWidth="203.0" promptText="Enter User Name" />
+      <Button layoutX="346.0" layoutY="421.0" mnemonicParsing="false" onAction="#Go_To_Menu" prefHeight="50.0" prefWidth="100.0" text="Menu">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
